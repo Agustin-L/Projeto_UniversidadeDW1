@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu AgroUP</title>
+    <script src="./login.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#apresentacao" class="hover">Apresentação</a>
+            <a href="#objetivos" class="hover">Objetivos</a>
+            <a href="#parceiros" class="hover">Partners</a>
+            <a href="#quemsomos" class="hover">Quem Somos</a>
+            <a href="#contatos" class="hover">Contatos</a>
+            <a href="#login" id="botaologin">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section id="apresentacao">
+            <div class="fundo-flex">
+                <h1 class="titulo-flex">Apresentação</h1>
+                <p class="texto-flex">AgroUP é uma empresa especializada em oferecer soluções tecnológicas para o setor
+                    agrícola, focada em sistemas computacionais que auxiliam agricultores na gestão eficiente de suas
+                    propriedades. Seus produtos incluem ferramentas de monitoramento em tempo real, análise de dados, e
+                    otimização de processos agrícolas, ajudando produtores a melhorar a produtividade, reduzir custos e
+                    tomar decisões mais assertivas. Com um compromisso em trazer inovação para o campo, a AgroUP promove
+                    o uso de tecnologias avançadas como inteligência artificial e internet das coisas (IoT) para
+                    transformar a agricultura em um setor mais sustentável e competitivo.</p>
+            </div>
+        </section>
+        <section id="objetivos">
+            <div class="fundo-flex">
+                <h1 class="titulo-flex">Objetivos</h1>
+                <p class="texto-flex">AgroUP tem como objetivo centralizar a inovação tecnológica no setor agrícola,
+                    oferecendo soluções que aumentem a eficiência das operações no campo e promovam a sustentabilidade.
+                    A empresa visa facilitar a tomada de decisões por meio de ferramentas de análise de dados em tempo
+                    real, além de fomentar o uso de tecnologias avançadas, como inteligência artificial e internet das
+                    coisas (IoT). Outro objetivo é melhorar a conectividade rural, capacitar agricultores no uso das
+                    ferramentas e garantir que suas práticas sejam cada vez mais produtivas e ambientalmente
+                    responsáveis.</p>
+            </div>
+        </section>
+        <section id="parceiros">
+            <div class="fundo-flex">
+                <h1 class="titulo-flex">Partners</h1>
+                <p class="texto-flex">A AgroUP poderia formar parcerias estratégicas A John Deere é reconhecida
+                    mundialmente no setor de maquinário agrícola, oferecendo soluções inovadoras que melhoram a
+                    eficiência e a sustentabilidade na produção agrícola. Suas máquinas e tecnologias visam otimizar o
+                    trabalho no campo, com ênfase em precisão e economia de recursos. Por sua vez, a TOTVS se destaca
+                    como uma das principais fornecedoras de softwares de gestão empresarial no Brasil, atuando em
+                    diversos setores, incluindo o agronegócio. A empresa desenvolve soluções para automatizar processos
+                    e melhorar a gestão, impulsionando a produtividade e a competitividade de seus clientes.
+                    Complementando esse cenário, a AGCO, especializada em equipamentos agrícolas, fornece uma linha
+                    diversificada de produtos, como tratores e colheitadeiras, que atendem às necessidades do
+                    agronegócio. A AGCO foca em inovação e sustentabilidade, oferecendo soluções que aumentam a
+                    eficiência e reduzem o impacto ambiental da agricultura.</p>
+            </div>
+        </section>
+        <section id="quemsomos">
+            <div class="fundo-flex">
+                <h1 class="titulo-flex">Quem Somos</h1>
+                <p class="texto-flex">
+                    Nome: Agustin Penelas RGM: 35148284<br>
+                    Nome: Agustin Cancino RGM: 35650087 <br>
+                    Nome: Gabriel Valenga RGM: 35327375 <br>
+                    <br>Somos três alunos da Universidade Positivo empenhados em desenvolver um projeto de web
+                    development básico. Nossa proposta é criar um site funcional e intuitivo, aplicando conceitos
+                    fundamentais de HTML, CSS e JavaScript. Estamos comprometidos em adquirir habilidades técnicas
+                    sólidas enquanto colaboramos de forma criativa para entregar um projeto de qualidade. Este trabalho
+                    é uma oportunidade para expandirmos nossos conhecimentos e nos prepararmos para os desafios da área
+                    de tecnologia e desenvolvimento web.
+                </p>
+            </div>
+        </section>
+        <footer id="contatos">
+            <div id="fundo-footer">
+                <h1>Contatos</h1>
+                <p>✉️ AgroUP Comercial: <a href="mailto:contato@agroup.farm">contato@agroup.farm.com</a></p>
+                <p>📞 Telefone para contato: <a href="tel:+5151981919763">(51) 98191-9763</a></p>
+                <p>©2024 Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </main>
+
+
+
+    <dialog id="login">
+        <div class="login-container">
+            <img src="./img/Agro-UP_transparent-removebg-preview.png" alt="Logo AgroUP">
+            <form>
+                <h1>Realize seu Login</h1>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <div class="buttons">
+                    <button type="button" id="fechar">Sair</button>
+                    <button type="submit">Entrar</button>
+                </div>
+
+            </form>
+        </div>
+    </dialog>
+
+
+
+
+</body>
+
+</html>

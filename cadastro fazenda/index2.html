@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style2.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="./index1.html">Cadastre sua maquinário</a>
+      <a href="./index2.html">Cadastre seu funcionario</a>
+      <a href="./index3.html">Cadastre seu animal</a>
+      <button type="reset"><a href="../index.html">Sair</a></button>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="campo2">
+      <h1>Cadastre seu funcionario</h1>
+      <button onclick="openModal()" id="incluir2">Incluir</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Matricula funcionario</th>
+            <th>Cargo funcionario</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+
+
+      <div class="modal-container">
+        <div class="modal">
+          <form>
+            <label for="m-nome2">Nome</label>
+            <input id="m-nome2" type="text" required />
+
+            <label for="m-matricula">Matricula funcionario</label>
+            <input id="m-matricula" type="number" required />
+
+            <label for="m-cargo">Cargo funcionario</label>
+            <input id="m-cargo" type="text" required />
+            <button id="btnSalvar2">Salvar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script2.js"></script>
+
+</body>
+
+</html>

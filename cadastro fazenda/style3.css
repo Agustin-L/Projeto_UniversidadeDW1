@@ -1,0 +1,228 @@
+body {
+
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+
+  background-image: url(./img/Paisagem6.jpg);
+  background-size: cover;
+  background-position:center; 
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+header {
+  top: 0;
+  width: 100%;
+  border: 2px;
+  border: solid rgb(0, 94, 0);
+}
+nav a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: rgb(225, 239, 148);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(41, 110, 33);
+  padding: 10px 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#campo3 {
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 20px 20px 20px;
+  padding: 10px;
+  border: solid 3px green;
+  border-radius: 10px;
+  background: rgba(48, 199, 31, 0.681);
+}
+
+#incluir3 {
+  margin: 10px;
+  width: auto;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: solid 2px;
+  color: black;
+  background-color: #f5b049;
+}
+
+table {
+  width: 98%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+thead {
+  background-color: #949494;
+}
+
+thead tr th,
+tbody tr td {
+  padding: 6px;
+  text-align: center;
+  border: solid;
+}
+
+tbody tr {
+  border: 2px solid black;
+}
+button{
+  border: 2px solid rgb(183, 255, 0);
+  border-radius: 20px;
+  background-color: rgba(91, 152, 21, 0.5);
+  padding: 5px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.modal input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(231, 219, 40);
+  color: white;
+  font-size: 16px;
+}
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal 0.4s;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  #campo3 {
+    margin: 70px 20px 20px 20px;
+    padding: 5px;
+  }
+
+  #incluir3 {
+    width: 95%;
+    padding: 10px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  thead tr th,
+  tbody tr td {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .modal {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .modal button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  #incluir3 {
+    font-size: 12px;
+    max-width: 330px;
+    width: 95%;
+    padding: 8px;
+  }
+
+  table {
+    font-size: 10px;
+  }
+
+  thead tr th,
+  tbody tr td {
+    padding: 3px;
+  }
+
+  .modal input,
+  .modal button {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
