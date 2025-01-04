@@ -14,10 +14,14 @@
 #login h1 {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
-    color: #f5b049;
+    color: #f5b048;
    
     margin-bottom: 50px;
     text-align: center; /* Centralizar o título */
+}
+
+p{
+    text-align: center;
 }
 
 input {

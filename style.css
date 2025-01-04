@@ -1,0 +1,125 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border: 2px;
+    border: solid rgb(0, 94, 0);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(41, 110, 33);
+    padding: 10px 20px;
+}
+.hover {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hover:hover {
+    color: rgb(225, 239, 148);
+}
+#botaologin {
+    border: 2px solid rgb(183, 255, 0);
+    border-radius: 20px;
+    background-color: rgba(91, 152, 21, 0.5);
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+}
+/*======================================================================================================*/
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+main {
+    margin-top: 40px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+/*======================================================================================================*/
+.fundo-flex {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(41, 147, 31, 0.7);
+    border: 3px solid #000;
+    border-radius: 20px;
+}
+
+.titulo-flex {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.texto-flex {
+    color: #fff;
+}
+
+#apresentacao{
+    background-image: url(./img/Paisagem1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#objetivos{
+    background-image: url(./img/Paisagem2.jpg);
+    background-size: cover; 
+    background-position: center; 
+}
+#parceiros{
+    background-image: url(./img/Paisagem3.jpg);
+    background-size: cover; 
+    background-position: center; 
+}
+#quemsomos{
+    background-image: url(./img/Paisagem4.png);
+    background-size: cover; 
+    background-position: center; 
+}
+#contatos{
+    background-image: url(./img/Paisagem5.png);
+    background-size: cover; 
+    background-position: center; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    background-color: rgb(41, 110, 33);
+    color: white;
+    padding: 20px;
+}
+#fundo-footer{
+    max-width: 800px;
+    padding: 20px;
+    background-color: #000;
+    border: solid #fff;
+    border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .fundo-block {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    #botaologin {
+        margin-top: 10px;
+    }
+}
